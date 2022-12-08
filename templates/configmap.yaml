@@ -1,0 +1,11 @@
+{{- if .Values.configMap.create }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "workshop-example-app.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+{{- with .Values.configMap.data }}
+data:
+{{- toYaml . | nindent 4 }}
+{{- end }}
+{{- end -}}
