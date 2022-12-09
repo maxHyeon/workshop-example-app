@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   tag: x-86
-  repository: 151430540785.dkr.ecr.ap-northeast-2.amazonaws.com/eks-cicd-workshop
+  repository: 151430540785.dkr.ecr.ap-northeast-2.amazonaws.com/eks-workshop
   pullPolicy: IfNotPresent
   
 
